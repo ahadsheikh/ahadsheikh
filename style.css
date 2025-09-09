@@ -1,0 +1,135 @@
+body {
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+  margin: 0;
+  color: #222;
+}
+
+.header {
+  text-align: center;
+  padding: 3rem 1rem 2rem 1rem;
+  background: rgba(255,255,255,0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  backdrop-filter: blur(6px);
+  border-radius: 0 0 32px 32px;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.header img {
+  width: 130px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  border: 4px solid #fff;
+}
+.header h1 {
+  margin: 0.5rem 0 0.2rem 0;
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #2b5876;
+}
+.header p {
+  margin: 0.2rem 0 0.5rem 0;
+  color: #666;
+  font-size: 1.1rem;
+}
+.section {
+  margin: 2rem auto;
+  max-width: 1000px;
+  background: rgba(255,255,255,0.85);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10);
+  padding: 2.5rem 2rem;
+  position: relative;
+}
+.section h2 {
+  text-align: left;
+  font-size: 2rem;
+  color: #2b5876;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+.project {
+  background: rgba(255,255,255,0.95);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(31, 38, 135, 0.08);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  border: 1px solid #e0eafc;
+}
+.project:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.18);
+}
+.project img {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 12px rgba(31, 38, 135, 0.07);
+}
+.project h3 {
+  margin: 0.5rem 0 0.2rem 0;
+  font-size: 1.3rem;
+  color: #2b5876;
+  font-weight: 600;
+}
+.project p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.project a {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  background: linear-gradient(90deg, #2b5876 0%, #4e4376 100%);
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(31, 38, 135, 0.10);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.project a:hover {
+  background: linear-gradient(90deg, #4e4376 0%, #2b5876 100%);
+  box-shadow: 0 4px 16px rgba(31, 38, 135, 0.18);
+}
+.contact {
+  text-align: center;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+}
+.contact a {
+  margin: 0 1.2rem;
+  color: #2b5876;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+.contact a:hover {
+  color: #4e4376;
+  text-decoration: underline;
+}
+.contact a.github {
+  color: #333;
+}
+@media (max-width: 700px) {
+  .section {
+    padding: 1.2rem 0.5rem;
+  }
+  .header {
+    padding: 2rem 0.5rem 1rem 0.5rem;
+  }
+  .projects {
+    gap: 1.2rem;
+  }
+}
